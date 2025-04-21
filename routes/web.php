@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\PasswordGeneratorController;
 use App\Http\Controllers\PizzaCalculatorController;
+use App\Http\Controllers\CreditBalanceController;
 
 Route::get('/', function () {
     return Inertia::render('welcome');
@@ -26,3 +27,5 @@ Route::post('/pizza-calculator/calculate', [PizzaCalculatorController::class, 'c
 Route::post('/pizza-calculator/add-to-cart', [PizzaCalculatorController::class, 'addToCart'])->name('pizza-calculator.add-to-cart');
 Route::post('/pizza-calculator/remove-from-cart', [PizzaCalculatorController::class, 'removeFromCart'])->name('pizza-calculator.remove-from-cart');
 Route::post('/pizza-calculator/clear-cart', [PizzaCalculatorController::class, 'clearCart'])->name('pizza-calculator.clear-cart');
+
+Route::get('/credit-balance', [CreditBalanceController::class, 'index'])->name('credit-balance');
