@@ -11,7 +11,7 @@ class PasswordGeneratorController extends Controller
 
     public function index()
     {
-        return Inertia::render('password-generator/page', [
+        return Inertia::render('password-generator', [
             'password' => session('password')
         ]);
     }

@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { Link } from '@inertiajs/react';
+import AppearanceToggleDropdown from '@/components/appearance-dropdown';
 
 interface GuestLayoutProps {
     children: ReactNode;
@@ -7,16 +8,19 @@ interface GuestLayoutProps {
 
 export default function GuestLayout({ children }: GuestLayoutProps) {
     return (
-        <div className="min-h-screen bg-gray-100">
-            <nav className="bg-white shadow-sm">
+        <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
+            <nav className="bg-white dark:bg-gray-800 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex">
                             <div className="flex-shrink-0 flex items-center">
-                                <Link href="/" className="text-xl font-bold text-gray-800">
+                                <Link href="/" className="text-xl font-bold text-gray-800 dark:text-gray-200">
                                     Password Generator
                                 </Link>
                             </div>
+                        </div>
+                        <div className="flex items-center">
+                            <AppearanceToggleDropdown />
                         </div>
                     </div>
                 </div>

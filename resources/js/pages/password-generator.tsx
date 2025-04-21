@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Head, useForm, usePage } from '@inertiajs/react';
 import { PageProps } from '@inertiajs/core';
-import GuestLayout from '@/layouts/GuestLayout';
+import GuestLayout from '@/layouts/guest-layout';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
