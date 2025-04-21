@@ -7,9 +7,11 @@ import { Toaster } from 'sonner';
 
 interface GuestLayoutProps {
     children: ReactNode;
+    title: string;
+    description: string;
 }
 
-export default function GuestLayout({ children }: GuestLayoutProps) {
+export default function GuestLayout({ children, title, description }: GuestLayoutProps) {
     return (
         <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
             <nav className="bg-white dark:bg-gray-800 shadow-sm">
@@ -28,7 +30,7 @@ export default function GuestLayout({ children }: GuestLayoutProps) {
                             </Button>
                             <div className="flex-shrink-0 flex items-center">
                                 <Link href="/" className="text-xl font-bold text-gray-800 dark:text-gray-200">
-                                    Password Generator
+                                    {title}
                                 </Link>
                             </div>
                         </div>

@@ -155,7 +155,7 @@ export default function PasswordGenerator({ password: initialPassword }: CustomP
     };
 
     return (
-        <GuestLayout>
+        <GuestLayout title="Password Generator" description="Password Generator">
             <Head title="Password Generator" />
 
             <div className="container mx-auto py-8 space-y-8">
