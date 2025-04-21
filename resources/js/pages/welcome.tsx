@@ -10,6 +10,10 @@ export default function Welcome() {
             description="Portfolio of Muhamad Faizul Bin Roni Amir - Lead Developer and Full Stack Engineer"
             disableBackButton={true}
         >
+            <Head>
+                <title>Home</title>
+                <meta name="description" content="Portfolio of Muhamad Faizul Bin Roni Amir - Lead Developer and Full Stack Engineer" />
+            </Head>
             <div className="min-h-screen flex flex-col bg-gradient-to-br dark:from-gray-900 dark:to-gray-800">
                 {/* Hero Section */}
                 <motion.div
@@ -120,6 +124,25 @@ export default function Welcome() {
                                 </h3>
                                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                                     Because math should never get in the way of your pizza party. (Unless you're calculating calories!)
+                                </p>
+                            </div>
+                        </motion.a>
+                        <motion.a
+                            href="/comments"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.8 }}
+                            whileHover={{ scale: 1.05 }}
+                            className="block"
+                        >
+                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                                <div className="text-blue-600 dark:text-blue-400 text-4xl mb-4">💬</div>
+                                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    Comments
+                                </h3>
+                                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                                    Where thoughts meet the digital world. (And sometimes, they even make sense!)
                                 </p>
                             </div>
                         </motion.a>
