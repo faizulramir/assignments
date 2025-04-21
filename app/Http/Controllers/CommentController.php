@@ -32,7 +32,7 @@ class CommentController extends Controller
         // Execute the SQL query
         $queryResults = DB::select($sqlQuery);
 
-        return Inertia::render('Comments/Index', [
+        return Inertia::render('comments', [
             'rawComments' => $rawComments,
             'sqlQuery' => $sqlQuery,
             'queryResults' => $queryResults,
