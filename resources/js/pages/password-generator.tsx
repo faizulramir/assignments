@@ -158,7 +158,7 @@ export default function PasswordGenerator({ password: initialPassword }: CustomP
         <GuestLayout title="Password Generator" description="Password Generator">
             <Head title="Password Generator" />
 
-            <div className="container mx-auto py-8 space-y-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <Card className="max-w-2xl mx-auto">
                     <CardHeader>
                         <motion.div

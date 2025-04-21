@@ -14,7 +14,7 @@ export default function Welcome() {
                 <title>Home</title>
                 <meta name="description" content="Portfolio of Muhamad Faizul Bin Roni Amir - Lead Developer and Full Stack Engineer" />
             </Head>
-            <div className="min-h-screen flex flex-col bg-gradient-to-br dark:from-gray-900 dark:to-gray-800">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 {/* Hero Section */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -79,7 +79,7 @@ export default function Welcome() {
                             whileHover={{ scale: 1.05 }}
                             className="block"
                         >
-                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer h-[300px] w-full">
                                 <div className="text-blue-600 dark:text-blue-400 text-4xl mb-4">💰</div>
                                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                                     Credit Balance Calculator
@@ -98,7 +98,7 @@ export default function Welcome() {
                             whileHover={{ scale: 1.05 }}
                             className="block"
                         >
-                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer h-[300px] w-full">
                                 <div className="text-blue-600 dark:text-blue-400 text-4xl mb-4">🔑</div>
                                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                                     Password Generator
@@ -117,7 +117,7 @@ export default function Welcome() {
                             whileHover={{ scale: 1.05 }}
                             className="block"
                         >
-                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer h-[300px] w-full">
                                 <div className="text-blue-600 dark:text-blue-400 text-4xl mb-4">🍕</div>
                                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                                     Pizza Calculator
@@ -136,7 +136,7 @@ export default function Welcome() {
                             whileHover={{ scale: 1.05 }}
                             className="block"
                         >
-                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer h-[300px] w-full">
                                 <div className="text-blue-600 dark:text-blue-400 text-4xl mb-4">💬</div>
                                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                                     Comments
@@ -155,7 +155,7 @@ export default function Welcome() {
                             whileHover={{ scale: 1.05 }}
                             className="block"
                         >
-                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer h-[300px] w-full">
                                 <div className="text-blue-600 dark:text-blue-400 text-4xl mb-4">🐌</div>
                                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                                     Snail
@@ -195,8 +195,9 @@ export default function Welcome() {
                             whileHover={{ scale: 1.1 }}
                             className="bg-white dark:bg-gray-800 rounded-xl p-6 text-center shadow-lg"
                         >
-                            <div className="text-4xl mb-4">⚛️</div>
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">React</h3>
+                            <div className="text-4xl mb-4">🚀</div>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Laravel</h3>
+
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.8 }}
@@ -206,8 +207,9 @@ export default function Welcome() {
                             whileHover={{ scale: 1.1 }}
                             className="bg-white dark:bg-gray-800 rounded-xl p-6 text-center shadow-lg"
                         >
-                            <div className="text-4xl mb-4">🦕</div>
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">TypeScript</h3>
+                            <div className="text-4xl mb-4">⚛️</div>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">React</h3>
+
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.8 }}
@@ -217,8 +219,9 @@ export default function Welcome() {
                             whileHover={{ scale: 1.1 }}
                             className="bg-white dark:bg-gray-800 rounded-xl p-6 text-center shadow-lg"
                         >
-                            <div className="text-4xl mb-4">🎨</div>
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Tailwind CSS</h3>
+                            <div className="text-4xl mb-4">🦕</div>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">TypeScript</h3>
+
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, scale: 0.8 }}
@@ -228,26 +231,28 @@ export default function Welcome() {
                             whileHover={{ scale: 1.1 }}
                             className="bg-white dark:bg-gray-800 rounded-xl p-6 text-center shadow-lg"
                         >
-                            <div className="text-4xl mb-4">🚀</div>
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Laravel</h3>
+                            <div className="text-4xl mb-4">🎨</div>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Tailwind CSS</h3>
                         </motion.div>
                     </div>
                 </motion.div>
 
-                {/* Footer */}
-                <motion.footer
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="bg-white dark:bg-gray-800 mt-auto"
-                >
-                    <div className="container mx-auto px-6 py-4 text-center text-gray-600 dark:text-gray-300">
-                        <p>© 2025 Muhamad Faizul Bin Roni Amir. All rights reserved.</p>
-                        <p className="mt-2 text-sm">Made with ❤️ and ☕</p>
-                    </div>
-                </motion.footer>
+
             </div>
+
+            {/* Footer */}
+            <motion.footer
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="bg-white dark:bg-gray-800 mt-auto"
+            >
+                <div className="container mx-auto px-6 py-4 text-center text-gray-600 dark:text-gray-300">
+                    <p>© 2025 Muhamad Faizul Bin Roni Amir. All rights reserved.</p>
+                    <p className="mt-2 text-sm">Made with ❤️ and ☕</p>
+                </div>
+            </motion.footer>
         </GuestLayout>
     );
 }
