@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { Link } from '@inertiajs/react';
 import AppearanceToggleDropdown from '@/components/appearance-dropdown';
-
+import { Toaster } from 'sonner';
 interface GuestLayoutProps {
     children: ReactNode;
 }
@@ -28,6 +28,7 @@ export default function GuestLayout({ children }: GuestLayoutProps) {
 
             <main className="py-12">
                 {children}
+                <Toaster />
             </main>
         </div>
     );

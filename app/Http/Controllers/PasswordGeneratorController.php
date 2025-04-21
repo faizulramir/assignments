@@ -34,7 +34,7 @@ class PasswordGeneratorController extends Controller
 
         $password = $this->generatePassword($length, $useLowercase, $useUppercase, $useNumbers, $useSymbols);
 
-        return Inertia::render('password-generator/page', [
+        return Inertia::render('password-generator', [
             'password' => $password
         ]);
     }
