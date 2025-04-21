@@ -6,6 +6,7 @@ use App\Http\Controllers\PasswordGeneratorController;
 use App\Http\Controllers\PizzaCalculatorController;
 use App\Http\Controllers\CreditBalanceController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\SnailController;
 
 Route::get('/', function () {
     return Inertia::render('welcome');
@@ -32,3 +33,6 @@ Route::post('/pizza-calculator/clear-cart', [PizzaCalculatorController::class, '
 Route::get('/credit-balance', [CreditBalanceController::class, 'index'])->name('credit-balance');
 
 Route::get('/comments', [CommentController::class, 'index'])->name('comments.index');
+
+Route::get('/snail', [SnailController::class, 'index'])->name('snail');
+Route::post('/snail/calculate', [SnailController::class, 'calculate'])->name('snail.calculate');

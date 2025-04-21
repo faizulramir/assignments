@@ -146,6 +146,25 @@ export default function Welcome() {
                                 </p>
                             </div>
                         </motion.a>
+                        <motion.a
+                            href="/snail"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 1.0 }}
+                            whileHover={{ scale: 1.05 }}
+                            className="block"
+                        >
+                            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow cursor-pointer">
+                                <div className="text-blue-600 dark:text-blue-400 text-4xl mb-4">🐌</div>
+                                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                    Snail
+                                </h3>
+                                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                                    A slow and steady journey through the world of web development. (But we promise it's worth the wait!)
+                                </p>
+                            </div>
+                        </motion.a>
                     </div>
                 </motion.div>
 
