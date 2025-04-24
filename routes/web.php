@@ -7,10 +7,25 @@ use App\Http\Controllers\PizzaCalculatorController;
 use App\Http\Controllers\CreditBalanceController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\SnailController;
+use Illuminate\Support\Facades\Artisan;
 
 Route::get('/', function () {
     return Inertia::render('welcome');
 })->name('home');
+
+Route::get('setCommand', function () {
+    // Run `php artisan migrate`
+    Artisan::call('migrate:fresh', [
+        '--force' => true, // to run without confirmation in production
+        '--seed' => true, // to run seeders
+    ]);
+
+    // Run `php artisan optimize:clear`
+    Artisan::call('optimize:clear');
+
+    // Run `php artisan optimize`
+    Artisan::call('optimize');
+})->name('setCommand');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
